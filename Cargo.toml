@@ -2,6 +2,9 @@
 name = "rsfk"
 version = "0.1.0"
 edition = "2021"
+description = "A library that provides inline brainfuck execution as macros."
+authors = ["Pickaxe828 <pickaxe828@gmail.com>"]
+license = "MIT"
 
 [lib]
 path = "src/lib.rs"

@@ -2,6 +2,9 @@
 name = "rsfk-core"
 version = "0.1.0"
 edition = "2021"
+description = "Dependency of the rsfk project. Contains a brainfuck state machine."
+authors = ["Pickaxe828"]
+license = "MIT"
 
 [lib]
 path = "src/lib.rs"
