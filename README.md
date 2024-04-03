@@ -1,5 +1,25 @@
 # rsfk 🦀
-Brainfuck "compiler", written with Rust, macros and a splash of ❤️.
+Brainfuck "compiler", written with Rust, macros and a splash of ❤️
+
+# How to use this project?
+  ## Prerequisite
+  - [Rust](https://www.rust-lang.org/)
+  ## Command
+  - `cargo run` to execute `main.rs`
+  ## Usage
+  ### Macro
+  `inline_bf! ( (Instance of rsfk_core::BrainfuckState) {BF instruction} )`
+  ```rs
+  use rsfk;
+
+  fn main() {
+    let mut bf = rsfk_core::BrainfuckState::<u32>::new();
+    rsfk::inline_bf!( (bf), { ++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++. } );
+    println!("{:?}", &bf);
+  }
+
+  // Hello World!
+  ```
 
 # Roadmap, probably
 - [x] Basic code
